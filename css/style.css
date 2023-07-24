@@ -440,9 +440,6 @@ header {
   text-decoration: none !important;
   transition: all 0.3s ease-in-out;
 }
-.html[dir="ltr"] .services-box {
-  font-size: 14px;
-}
 .services-box span {
   min-height: 81px;
 }
@@ -634,6 +631,10 @@ html[dir="ltr"] .about-img {
     text-align-last: center;
     line-height: unset;
   }
+  html[dir="ltr"] .about-pargh{
+    font-size: 17px;
+    line-height: 30px;
+  }
 }
 /*                         about-section               */
 /*                        vision-section                   */
@@ -665,6 +666,9 @@ html[dir="ltr"] .about-img {
   text-align-last: center;
   margin-bottom: 0;
 }
+html[dir="ltr"] .vision-pargh{
+  font-size: 17px;
+}
 @media (max-width: 991px) {
   .section-head {
     font-size: 28px;
@@ -677,6 +681,12 @@ html[dir="ltr"] .about-img {
   }
   .vision-title {
     font-size: 28px;
+  }
+  .vision-pargh{
+    line-height: unset;
+  }
+  html[dir="ltr"] .vision-pargh{
+    font-size: 16px;
   }
 }
 /*                        vision-section                   */
@@ -726,6 +736,9 @@ html[dir="ltr"] .about-img {
   text-align-last: center;
   margin-bottom: 0;
 }
+html[dir="ltr"] .features-pargh {
+  font-size: 17px;
+}
 @media (max-width: 991px) {
   .features-section {
     margin-bottom: 50px;
@@ -738,6 +751,9 @@ html[dir="ltr"] .about-img {
     max-width: 400px;
     padding: 30px 20px;
   }
+  html[dir="ltr"] .features-pargh {
+    font-size: 16px;
+}
 }
 /*                       about-us-section                             */
 
