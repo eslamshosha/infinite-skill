@@ -285,7 +285,7 @@ header {
   background: linear-gradient(
     0deg,
     rgba(26, 46, 90, 0.302) 0%,
-    rgba(26, 46, 90, 0.302) 60%,
+    rgba(26, 46, 90, 0.402) 60%,
     rgba(11, 24, 56, 1) 100%
   );
   z-index: 1;
@@ -445,10 +445,9 @@ header {
 }
 .services-box span {
   min-height: 81px;
-  overflow: hidden;
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
+}
+html[dir="ltr"] .services-box span {
+  min-height: 108px;
 }
 .services-box:hover {
   color: var(--main-color);
@@ -521,15 +520,21 @@ header {
   }
   .services-box {
     font-size: 14px;
-    padding: 20px 0;
+    padding: 30px 15px 20px;
+  }
+  html[dir="ltr"] .services-box {
+    padding: 30px 10px 20px;
   }
   .services-box span {
-    min-height: 40px;
+    min-height: 84px;
+  }
+  html[dir="ltr"] .services-box span{
+    min-height: 126px;
   }
   .services-box figure {
     width: 100%;
     max-width: 100%;
-    margin-bottom: 12px;
+    margin-bottom: 15px;
     max-height: 65px;
   }
   .services-box img {
@@ -872,6 +877,9 @@ html[dir="ltr"] .about-img {
 .product,
 .news-cont {
   position: relative;
+}
+.news-cont{
+  display: block;
 }
 .news-figure {
   display: -webkit-box;
@@ -1731,7 +1739,7 @@ html[dir="rtl"] .footer-accordion.active:after {
   .cats-dispaly {
     min-width: unset;
     z-index: 99;
-    padding: 0;
+    padding: 0 15px;
     height: unset;
     margin: 0 auto;
     background-color: transparent;
